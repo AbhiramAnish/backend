@@ -3,8 +3,8 @@ from flask_cors import CORS
 import pickle
 import numpy as np
 
-import SMS
-obj = SMS.sms()
+# import SMS
+# obj = SMS.sms()
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -24,7 +24,7 @@ def predict():
 
     weather_features = np.array(data["weather"]).reshape(1, -1)
     prediction = model.predict(weather_features)[0]
-    obj.msg(prediction)
+    # obj.msg(prediction)
     return jsonify({"prediction": str(prediction)})
 
 if __name__ == "__main__":

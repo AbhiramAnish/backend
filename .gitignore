@@ -8,3 +8,6 @@ __pycache__/
 
 # Ignore virtual environments (if using venv)
 venv/
+
+# Ignore SMS file
+SMS.py
