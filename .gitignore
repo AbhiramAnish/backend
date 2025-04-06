@@ -11,3 +11,4 @@ venv/
 
 # Ignore SMS file
 SMS.py
+test.py
